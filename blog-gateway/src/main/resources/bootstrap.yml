@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: blog-gateway
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.79.112.82:8848
+        group: dev
+        namespace: 0322f39e-1c87-458e-ab35-4cc1424cbacd
+      config:
+        server-addr: 120.79.112.82:8848
+        namespace: 0322f39e-1c87-458e-ab35-4cc1424cbacd
+        group: dev
+        prefix: blog-gateway
+        file-extension: yaml
+
+
+
+
+
+
+

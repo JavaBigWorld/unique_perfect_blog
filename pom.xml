@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>blog-common</module>
+        <module>blog-user</module>
+        <module>blog-gateway</module>
+        <module>blog-articles</module>
+        <module>blog-tags</module>
+        <module>blog-auth</module>
+        <module>blog-category</module>
+        <module>blog-comment</module>
+        <module>blog-upload</module>
+        <module>blog-back</module>
+    </modules>
+    <groupId>com.yxj.blog</groupId>
+    <artifactId>blog</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>blog</name>
+    <description>博客-聚合服务</description>
+    <packaging>pom</packaging>
+
+    <!--继承springboot父项目-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.5.RELEASE</version>
+    </parent>
+
+
+    <!--维护maven依赖版本-->
+    <properties>
+        <java.version>1.8</java.version>
+        <spring.cloud.version>Hoxton.SR6</spring.cloud.version>
+        <spring.cloud.alibaba.version>2.2.1.RELEASE</spring.cloud.alibaba.version>
+        <lombok.version>1.18.20</lombok.version>
+        <mybatis.plus.version>3.4.3</mybatis.plus.version>
+        <druid.version>1.1.13</druid.version>
+        <joda.time.version>2.10.10</joda.time.version>
+        <mysql.version>8.0.26</mysql.version>
+        <mybatis.version>3.1.0</mybatis.version>
+        <jwt.version>0.9.1</jwt.version>
+        <swagger2.version>1.9.0.RELEASE</swagger2.version>
+        <fastjson>1.2.47</fastjson>
+    </properties>
+
+
+    <!--全局引入下载依赖地址,并不会引入依赖-->
+    <dependencyManagement>
+        <dependencies>
+
+            <!--引入阿里巴巴下载仓库-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--引入springcloud下载仓库-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

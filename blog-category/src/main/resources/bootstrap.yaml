@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: blog-category
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.79.112.82:8848
+        group: dev
+        namespace: 0322f39e-1c87-458e-ab35-4cc1424cbacd
+      config:
+        server-addr: 120.79.112.82:8848
+        namespace: 1b2e0588-5c53-434d-9964-b8f5092a0c57
+        group: dev
+        prefix: blog-category
+        file-extension: yaml
+
+
+
+

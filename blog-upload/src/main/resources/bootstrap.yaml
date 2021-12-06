@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: blog-upload
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.79.112.82:8848
+        group: dev
+        namespace: 0322f39e-1c87-458e-ab35-4cc1424cbacd
+      config:
+        server-addr: 120.79.112.82:8848
+        namespace: 562dec09-5376-4f94-8ac5-87ed64a569c4
+        group: dev
+        prefix: blog-upload
+        file-extension: yaml
+

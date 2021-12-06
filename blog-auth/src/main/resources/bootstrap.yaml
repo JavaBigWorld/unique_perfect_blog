@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: blog-auth
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.79.112.82:8848
+        group: dev
+        namespace: 0322f39e-1c87-458e-ab35-4cc1424cbacd
+      config:
+        server-addr: 120.79.112.82:8848
+        namespace: e12e9d7f-4a57-436b-b473-a0418ce07f97
+        group: dev
+        prefix: blog-auth
+        file-extension: yaml
+
+
+
+

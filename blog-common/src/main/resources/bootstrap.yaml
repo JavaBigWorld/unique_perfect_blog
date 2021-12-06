@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: blog-common
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.79.112.82:8848
+        group: dev
+        namespace: 0322f39e-1c87-458e-ab35-4cc1424cbacd
+      config:
+        server-addr: 120.79.112.82:8848
+        namespace: 09316c98-2412-46a2-94f4-d956153993b2
+        group: dev
+        prefix: blog-common
+        file-extension: yaml
+
+
+
+

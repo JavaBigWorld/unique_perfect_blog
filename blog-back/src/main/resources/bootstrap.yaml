@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: blog-back
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.79.112.82:8848
+        group: dev
+        namespace: 0322f39e-1c87-458e-ab35-4cc1424cbacd
+      config:
+        server-addr: 120.79.112.82:8848
+        namespace: 487f42b8-0600-4e62-b40c-8fbd2b909282
+        group: dev
+        prefix: blog-back
+        file-extension: yaml
+
+
+
+
